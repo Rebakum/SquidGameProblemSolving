@@ -10,17 +10,17 @@ Hint: Look into built-in string slicing or a simple loop.
 */
 
 
-// function reverseString(S: string): string {
-//   let reversed = "";
+function reverseString(S: string): string {
+  let reversed = "";
 
-//   for (let i = S.length - 1; i >= 0; i--) {
-//     reversed += S[i];
-//   }
+  for (let i = S.length - 1; i >= 0; i--) {
+    reversed += S[i];
+  }
 
-//   return reversed;
-// }
+  return reversed;
+}
 
-// console.log(reverseString("Hello World")) // Output: "dlroW olleH"
+console.log(reverseString("Hello World")) // Output: "dlroW olleH"
 
 /**
 2. FizzBuzz
@@ -34,26 +34,26 @@ Hint: Use the modulo operator % to check for remainders.
 */
 
 
-// function fizzBuzz(n: number): void {
-//   for (let i = 1; i <= n; i++) {
+function fizzBuzz(n: number): void {
+  for (let i = 1; i <= n; i++) {
 
-//     if (i % 3 === 0 && i % 5 === 0) {
-//       console.log("FizzBuzz");
-//     } 
-//     else if (i % 3 === 0) {
-//       console.log("Fizz");
-//     } 
-//     else if (i % 5 === 0) {
-//       console.log("Buzz");
-//     } 
-//     else {
-//       console.log(i);
-//     }
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log("FizzBuzz");
+    } 
+    else if (i % 3 === 0) {
+      console.log("Fizz");
+    } 
+    else if (i % 5 === 0) {
+      console.log("Buzz");
+    } 
+    else {
+      console.log(i);
+    }
 
-//   }
-// }
+  }
+}
 
-// fizzBuzz(15);
+fizzBuzz(15);
 
 /**
 3. Find the Largest Number in an Array
@@ -66,20 +66,20 @@ Edge Case: Array with all negative numbers.
 Hint: Initialize a variable with the first element of the array.
  */
 
-// function findLargest(nums: number[]): number {
-//   let max = nums[0];
+function findLargest(nums: number[]): number {
+  let max = nums[0];
 
-//   for (let i = 1; i < nums.length; i++) {
-//     if (nums[i] > max) {
-//       max = nums[i];
-//     }
-//   }
+  for (let i = 1; i < nums.length; i++) {
+    if (nums[i] > max) {
+      max = nums[i];
+    }
+  }
 
-//   return max;
-// }
+  return max;
+}
 
-// console.log(findLargest([3, 7, 2, 9, 5]));
-// console.log(findLargest([-10, -3, -50, -2]));
+console.log(findLargest([3, 7, 2, 9, 5]));
+console.log(findLargest([-10, -3, -50, -2]));
 
 /**
 4. Check for Palindrome
@@ -93,13 +93,13 @@ Hint: Compare the string with its reverse.
 
 */
 
-// function isPalindrome(s: string): boolean {
-//   const cleaned = s.toLowerCase();
+function isPalindrome(s: string): boolean {
+  const cleaned = s.toLowerCase();
 
-//   const reversed = cleaned.split('').reverse().join('');
+  const reversed = cleaned.split('').reverse().join('');
 
-//   return cleaned === reversed;
-// }
+  return cleaned === reversed;
+}
 
 // console.log(isPalindrome("racecar")); // true
 // console.log(isPalindrome("hello"));    // false
@@ -116,19 +116,19 @@ Hint: Use an accumulator variable inside a loop.
 
 */
 
-// function sumArray(nums: number[]): number {
-//   let sum = 0;
+function sumArray(nums: number[]): number {
+  let sum = 0;
 
-//   for (let i = 0; i < nums.length; i++) {
-//     sum += nums[i];
-//   }
+  for (let i = 0; i < nums.length; i++) {
+    sum += nums[i];
+  }
 
-//   return sum;
-// }
+  return sum;
+}
 
-// console.log(sumArray([1, 2, 3, 4])); // 10
-// console.log(sumArray([5, 10, 15]));  // 30
-// console.log(sumArray([]));           // 0
+console.log(sumArray([1, 2, 3, 4])); // 10
+console.log(sumArray([5, 10, 15]));  // 30
+console.log(sumArray([]));           // 0
 
 /***
 6. Count Vowels
@@ -142,25 +142,25 @@ Hint: Iterate through the string and check if each character is in a "vowel" set
 
 */
 
-// function countVowels(s: string): number {
-//   let count = 0;
+function countVowels(s: string): number {
+  let count = 0;
 
-//   const vowels = "aeiou";
+  const vowels = "aeiou";
 
-//   for (let i = 0; i < s.length; i++) {
-//     const char = s[i].toLowerCase();
+  for (let i = 0; i < s.length; i++) {
+    const char = s[i].toLowerCase();
 
-//     if (vowels.includes(char)) {
-//       count++;
-//     }
-//   }
+    if (vowels.includes(char)) {
+      count++;
+    }
+  }
 
-//   return count;
-// }
+  return count;
+}
 
-// console.log(countVowels("hello"));        // 2
-// console.log(countVowels("programming"));  // 3
-// console.log(countVowels("sky"));          // 0
+console.log(countVowels("hello"));        // 2
+console.log(countVowels("programming"));  // 3
+console.log(countVowels("sky"));          // 0
 
 /**
 7. Factorial Calculation
@@ -174,19 +174,19 @@ Hint: Use a for-loop or recursion.
 
 */
 
-// function factorial(n: number): number {
-//   let result = 1;
+function factorial(n: number): number {
+  let result = 1;
 
-//   for (let i = 1; i <= n; i++) {
-//     result *= i;
-//   }
+  for (let i = 1; i <= n; i++) {
+    result *= i;
+  }
 
-//   return result;
-// }
+  return result;
+}
 
-// console.log(factorial(5)); // 120
-// console.log(factorial(3)); // 6
-// console.log(factorial(0)); // 1
+console.log(factorial(5)); // 120
+console.log(factorial(3)); // 6
+console.log(factorial(0)); // 1
 
 
 /***
@@ -201,19 +201,19 @@ Hint: Use the modulo operator inside a filter condition.
 
 */
 
-// function getEvenNumbers(nums: number[]): number[] {
-//   const result: number[] = [];
+function getEvenNumbers(nums: number[]): number[] {
+  const result: number[] = [];
 
-//   for (let i = 0; i < nums.length; i++) {
-//     if (nums[i] % 2 === 0) {
-//       result.push(nums[i]);
-//     }
-//   }
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] % 2 === 0) {
+      result.push(nums[i]);
+    }
+  }
 
-//   return result;
-// }
-// console.log(getEvenNumbers([1, 2, 3, 4, 5, 6])); // [2, 4, 6]
-// console.log(getEvenNumbers([1, 3, 5, 7]));       // []
+  return result;
+}
+console.log(getEvenNumbers([1, 2, 3, 4, 5, 6])); // [2, 4, 6]
+console.log(getEvenNumbers([1, 3, 5, 7]));       // []
 
 /***
 9. Fibonacci Sequence
