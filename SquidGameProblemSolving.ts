@@ -245,7 +245,6 @@ function fibonacci(n: number): number[] {
   return result;
 }
 
-// test
 console.log(fibonacci(5)); // [0, 1, 1, 2, 3]
 console.log(fibonacci(1)); // [0]
 console.log(fibonacci(10)); // [0,1,1,2,3,5,8,13,21,34]
@@ -274,7 +273,6 @@ function findMinimum(nums: number[]): number {
   return min;
 }
 
-// test
 console.log(findMinimum([3, 7, 2, 9, 5])); // 2
 console.log(findMinimum([10, -3, 5, 1]));  // -3
 console.log(findMinimum([4, 4, 4]));       // 4
